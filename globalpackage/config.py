@@ -8,7 +8,7 @@ scope = [
 'https://www.googleapis.com/auth/drive',
 ]
 
-json_file_name = 'sechan-217204-eccafe3224f3.json'
+json_file_name = None
 sheeturl = 'https://docs.google.com/spreadsheets/d/1EcDlIlyCOTbqfP4amO4zlYkRbpQpCZyH5UWNWfqJXyM/edit#gid=0'
 
 sheet1device = ['D5001','D5002']
