@@ -2,11 +2,14 @@
 from config import *
 '''
 초기 세팅 끝내고 workspace를 return 해주는 Class 
+
+setting 할 때 deviceinfo를 지정해주어 시트를 저장하게 함
+DataLoading도 같이 역할 수행
 '''
 
 class Set:
 
-    def __init__(self,json):
+    def __init__(self):
         self.setting_scope = scope
         self.json = json_file_name
         self.url = sheeturl
@@ -15,21 +18,22 @@ class Set:
         self.doc = self.gc.open_by_url(self.url)
         self.sheet = '시트1' # 처리할 sheet
 
-        self.setsheet()
+        self.Device()
 
 
-    def Device(self,json):
+    def Device(self):
+        #json -> configjson
+        pass
+        #deviceinfo = json['DeviceId']
 
-        deviceinfo = json['DeviceId']
+        #if deviceinfo not in sheet1device:
+            #self.sheet = '시트2'
 
-        if deviceinfo not in sheet1device:
-            self.sheet = '시트2'
 
-        return self.setsheet()
 
     def setsheet(self):
-        print(self.sheet)
         return self.doc.worksheet(self.sheet)
+
 
 
 
