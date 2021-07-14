@@ -12,7 +12,7 @@ json_file_name = None
 sheeturl = 'https://docs.google.com/spreadsheets/d/1EcDlIlyCOTbqfP4amO4zlYkRbpQpCZyH5UWNWfqJXyM/edit#gid=0'
 
 sheet1device = ['D5001','D5002']
-
+json_file_name = 'jsonfile/sechan.json'
 configdata = None
 configjson ={
     '단말': '기가지니5',

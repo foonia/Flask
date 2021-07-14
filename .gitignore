@@ -8,3 +8,4 @@ venv/
 __pycache__/
 ngnix/
 uwsgi-2.0.19.1/
+jsonfile/

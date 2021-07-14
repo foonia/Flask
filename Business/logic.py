@@ -1,5 +1,7 @@
-
-from lib import *
+import sys,os
+sys.path.append(os.path.dirname(os.path.abspath((os.path.dirname(__file__)))))
+from globalpackage import lib
+from globalpackage import config
 
 class Logic:
 

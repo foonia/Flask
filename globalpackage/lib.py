@@ -3,9 +3,13 @@ import pandas as pd
 import gspread as gd
 
 
-from setting import Set
-import config
-from readandwrite import *
-from logic import *
 
-from testjosn import *
+import sys,os
+sys.path.append(os.path.dirname(os.path.abspath((os.path.dirname(__file__)))))
+
+from globalpackage import config
+from Business import setting
+from Business import readandwrite
+from Business import logic
+from Business import testjosn
+

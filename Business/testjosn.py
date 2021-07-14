@@ -17,4 +17,3 @@ info2={
 
 json_info = json.dumps(info1,ensure_ascii=False)
 
-from setting import *
